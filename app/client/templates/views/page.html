@@ -1,0 +1,18 @@
+<div class="navbar navbar-static-top" ng-controller="NavigationCtrl">
+  <div class="navbar-inner">
+    <a class="brand" href="/home">Singular application</a>
+    <ul class="nav">
+      <li state-link="sg.home" title="Home"></li>
+      <li state-link="sg.users" title="Users" ng-if="loggedIn()"></li>
+      <li state-link="sg.login" title="Login" ng-if="loggedIn() == false"></li>
+      <li ng-if="loggedIn()">
+        <a ng-click="logout()">Logout</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="alert alert-error" style="margin-top: 10px;" ng-bind="error" ng-if="error"></div>
+  <div ui-view></div>
+</div>

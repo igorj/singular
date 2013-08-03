@@ -1,0 +1,40 @@
+<!DOCTYPE html><!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"></html><![endif]--><!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"></html><![endif]--><!--[if IE 8]>
+<html class="no-js lt-ie9"></html><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Singular starter application</title>
+  <meta name="description" content="Template for Sinatra and Angular.js applications">
+  <meta name="viewport" content="width=device-width">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory-->
+  <link rel="stylesheet" href="ae54ad36.styles.css">
+  <script type="text/javascript">
+    window.sgConfig = {
+      <% if current_user %>
+      currentUser: {name: '<%= current_user.name %>', email: '<%= current_user.email %>'}
+      <% end %>
+    }
+  </script>
+  <script src="092dc33c.vendor.js"></script>
+  <script src="960523bb.app.js"></script>
+</head>
+<body ng-app="singularApp">
+<!--[if lt IE 7]>
+<p class="chromeframe">You are using an outdated browser.<a href="http://browsehappy.com/">Upgrade your browser today or</a><a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame to better experience this site.</a></p><![endif]--><!--[if lt IE 9]>
+<script src="7d08750d.ie.js"></script>
+<!--<![endif]-->
+<div ui-view></div>
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID.-->
+<script>
+  var _gaq=[['_setAccount','UA-30542976-4'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+</body>
+</html>

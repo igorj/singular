@@ -1,0 +1,11 @@
+<form novalidate id="loginForm" name="loginForm" class="form-horizontal">
+  <div class="control-group">
+    <mbtext name="email" label="Email" ng-model="login.email" placeholder="me@example.com" autofocus="true"></mbtext>
+    <mbpassword name="password" label="Password" ng-model="login.password" placeholder="****"></mbpassword>
+  </div>
+  <div class="control-group">
+    <div class="controls">
+      <button class="btn btn-success" ng-click="doLogin()">Login</button>
+    </div>
+  </div>
+</form>

@@ -1,0 +1,19 @@
+{
+  "name": "singular",
+  "version": "0.0.1",
+  "appPath": "client",
+  "dependencies": {
+    "jquery": "~1.10.1",
+    "underscore": "~1.4.4",
+    "angular" : "PatternConsulting/bower-angular#1.1.5",
+    "angular-ui-router": "~0.0.1",
+    "angular-bootstrap": "~0.3.0",
+    "json3": "~3.2.4",
+    "es5-shim": "2.1.0",
+    "bootstrap": "~2.3.2",
+    "sass-twitter-bootstrap": "git://github.com/jlong/sass-twitter-bootstrap.git#~2.3.1"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.0.5"
+  }
+}

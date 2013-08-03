@@ -1,0 +1,21 @@
+<div class="row-fluid">
+  <div class="span12">
+    <div ui-view="edit"></div>
+    <button ng-show="displayNewUserButton()" ng-click="newUser()" class="btn btn-primary btn-add">Add user</button>
+    <h3>Users</h3>
+    <table class="table table-condensed table-striped">
+      <thead>
+        <th>Name</th>
+        <th>Email</th>
+      </thead>
+      <tr class="text" ng-repeat="user in users | orderBy:'name'">
+        <td><a ng-click="editUser(user)">{{user.name}}</a></td>
+        <td>{{user.email}}</td>
+        <td><a class="btn btn-danger btn-mini" ng-click="deleteUser(user)">Delete</a></td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+
+

@@ -1,0 +1,27 @@
+development:
+  sessions:
+    default:
+      hosts:
+        - localhost:27017
+      database: singular_development
+      options:
+        skip_version_check: true
+        safe: true
+
+production:
+  sessions:
+    default:
+      uri: <%= ENV['MONGOLAB_URI'] %>
+      options:
+        skip_version_check: true
+        safe: true
+
+test:
+  sessions:
+    default:
+      hosts:
+        - localhost:27017
+      database: singular_test
+      options:
+        skip_version_check: true
+        safe: true
