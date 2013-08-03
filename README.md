@@ -2,15 +2,15 @@
 
 Singular is a starter application for dynamic web applications with Angular.js frontend and Sinatra-JSON backend.
 
-It uses Bundler, NPM and Twitter Bower for managing dependencies.
-It uses Grunt as build tool.
-It uses MiniTest for ruby unit tests, Karma and Jasmine for JavaScript unit tests and Capybara, PhantomJS and Poltergeist for webtests.
-It uses Twitter Bootstrap and SASS for layout
-It uses Mongo as persistence store
-It offers live reload and autotest for all unit tests
-It uses Git for source control and BitBucket as remote git repository
-It is deployed on Heroku
-It uses Foreman for running the application on Heroku
+- It uses Bundler, NPM and Twitter Bower for managing dependencies.
+- It uses Grunt as build tool.
+- It uses MiniTest for ruby unit tests, Karma and Jasmine for JavaScript unit tests and Capybara, PhantomJS and Poltergeist for webtests.
+- It uses Twitter Bootstrap and SASS for layout
+- It uses Mongo as persistence store
+- It offers live reload and autotest for all unit tests
+- It uses Git for source control and BitBucket as remote git repository
+- It is deployed on Heroku
+- It uses Foreman for running the application on Heroku
 
 ## Installation
 
@@ -32,12 +32,10 @@ Configuration is done with environment variables.
 For development, env-variables should be defined in the RubyMine Run/Debug configuration
 For production, env-variables are defined with the heroku config command-line tool
 
-Following environment variables should be set:
+Following environment variables should be set in production:
 
 - SESSION_SECRET
-- AMAZON_ACCESS_KEY_ID
-- AMAZON_SECRET_ACCESS_KEY
-- MONGOLAB_URI (only in production)
+- MONGOLAB_URI
 
 ## Run the application in development
 
@@ -51,15 +49,6 @@ Open in the browser: <http://localhost:4000>
 
 **grunt deploy**
 
-## Database backup and restore
-
-Backup from production:
-
-mongodump -h ds053937.mongolab.com:53937 -d heroku_app14448348 -u heroku_app14448348 -p <password> -o backup
-
-Restore from production:
-
-mongorestore -d translations --drop backup/heroku_app14448348
 
 
 
